@@ -6,6 +6,75 @@ Vitalis is a professional-grade health monitoring platform designed for high-sta
 
 ---
 
+<hr>
+
+<h2>How to Use Vitalis</h2>
+
+<p>
+Follow these simple steps to access and use the Vitalis platform.
+</p>
+
+<h3>Step 1 – Open the Website</h3>
+
+<p>
+Open the Vitalis platform using the link provided in this repository.
+</p>
+
+<p>
+<strong>Website URL:</strong> <code>PASTE_WEBSITE_LINK_HERE</code>
+</p>
+
+<p>
+Click the link or paste it into your browser to access the platform.
+</p>
+
+<h3>Step 2 – Login to the Platform</h3>
+
+<p>
+Once the website opens, log in using the credentials provided below.
+</p>
+
+<p>
+<strong>Email:</strong> <code>PASTE_EMAIL_HERE</code><br>
+<strong>Password:</strong> <code>PASTE_PASSWORD_HERE</code>
+</p>
+
+<p>
+After entering the credentials, click <strong>Login</strong> to access the Vitalis dashboard.
+</p>
+
+<h3>Step 3 – Start Live Monitoring</h3>
+
+<p>
+After logging in, navigate to the <strong>Live Monitor</strong> section of the platform.
+</p>
+
+<p>
+Click <strong>Start Camera</strong> to begin the biometric scan.
+</p>
+
+<p>
+The system will activate your camera and use <strong>Remote Photoplethysmography (rPPG)</strong> technology to analyze subtle facial signals.
+</p>
+
+<p>
+Within a few seconds, Vitalis will estimate and display your vital health indicators, including:
+</p>
+
+<ul>
+<li><strong>Heart Rate</strong></li>
+<li><strong>Heart Rate Variability (HRV)</strong></li>
+<li><strong>Stress Level</strong></li>
+<li><strong>Fatigue Index</strong></li>
+<li><strong>Wellness Score</strong></li>
+</ul>
+
+<p>
+These results will appear on the dashboard in real time, allowing you to monitor your health condition instantly.
+</p>
+
+<hr>
+
 ## 🚀 Core Technologies
 
 ### 📡 rPPG Scanning
