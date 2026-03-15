@@ -6,8 +6,6 @@ Vitalis is a professional-grade health monitoring platform designed for high-sta
 
 ---
 
-<hr>
-
 <h2>How to Use Vitalis</h2>
 
 <p>
@@ -21,7 +19,7 @@ Open the Vitalis platform using the link provided in this repository.
 </p>
 
 <p>
-<strong>Website URL:</strong> <code>PASTE_WEBSITE_LINK_HERE</code>
+<strong>Website URL:</strong> <code>https://vitalisrppg.vercel.app/</code>
 </p>
 
 <p>
@@ -35,8 +33,8 @@ Once the website opens, log in using the credentials provided below.
 </p>
 
 <p>
-<strong>Email:</strong> <code>PASTE_EMAIL_HERE</code><br>
-<strong>Password:</strong> <code>PASTE_PASSWORD_HERE</code>
+<strong>Email:</strong> <code>hi@gmail.com</code><br>
+<strong>Password:</strong> <code>abcd1234</code>
 </p>
 
 <p>
