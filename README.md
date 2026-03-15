@@ -1,218 +1,109 @@
-<h1 align="center">Vitalis</h1>
+# 🩺 Vitalis
 
-<p align="center">
-<strong>AI-Powered Workforce Health Monitoring Platform</strong>
-</p>
+**AI-Powered Health Monitoring & rPPG Vital Analytics**
 
-<p align="center">
-Vitalis is a real-time biometric monitoring system that uses computer vision and AI to estimate vital health signals such as heart rate, HRV, stress levels, and fatigue. The platform helps organizations detect early health risks and improve workplace safety in demanding environments.
-</p>
+Vitalis is a professional-grade health monitoring platform designed for high-stakes environments, such as long-duration space missions. By leveraging Remote Photoplethysmography (rPPG) and advanced AI scanning, Vitalis provides non-invasive, real-time insights into vital signs, mental stress, and psychological well-being.
 
-<hr>
+---
 
-<h2>Overview</h2>
+## 🚀 Core Technologies
 
-<p>
-Vitalis is designed to monitor the health and wellness of workers in real time using AI-powered facial biometric analysis. 
-The system analyzes subtle facial signals captured by a camera to estimate important physiological indicators.
-</p>
+### 📡 rPPG Scanning
+Vitalis utilizes **Remote Photoplethysmography (rPPG)** to detect micro-variations in skin color caused by blood circulation. By analyzing video streams from a standard webcam, Vitalis can estimate:
+- **Heart Rate (BPM)** with high precision.
+- **Heart Rate Variability (HRV)** for stress assessment.
+- **Respiration Rate (RR)** through thoracic movement and skin-tone analysis.
 
-<p>
-These indicators are used to generate a <strong>Wellness Score</strong> and detect early warning signs of fatigue, stress, or abnormal health patterns. 
-When potential risks are detected, Vitalis generates alerts so supervisors or safety teams can intervene before incidents occur.
-</p>
+### 🧠 AI-Powered Analysis
+Our proprietary AI engine processes biometric data to provide a holistic view of user health:
+- **Mental Health Analytics**: Real-time stress indexing and fatigue probability.
+- **Biometric Risk Assessment**: Automatic detection of deviations from personal baselines.
+- **Predictive Recommendations**: Actionable insights like breathing exercises or workload moderation.
 
-<p>
-The goal of Vitalis is to provide a <strong>non-intrusive, intelligent health monitoring solution</strong> that improves workplace safety and worker well-being.
-</p>
+---
 
-<hr>
+## ✨ Key Features
 
-<h2>Problem Statement</h2>
+- **ASTRA Companion**: An OpenAI-powered psychological support agent (ASTRA) that provides empathetic guidance and stress management techniques.
+- **Mission Dashboard**: Comprehensive tracking of health trends, mission phases, and environmental context.
+- **Baseline Recalibration**: Dynamic adjustment of health 'normals' based on long-term data trends.
+- **Non-Invasive Monitoring**: No wearables required; health analysis is performed entirely through optical sensors.
 
-<p>
-In many industries, worker fatigue and stress are major contributors to accidents, productivity loss, and health emergencies.
-</p>
+---
 
-<ul>
-<li>Manual health monitoring is inconsistent.</li>
-<li>Wearable devices can be intrusive or inconvenient.</li>
-<li>Early signs of fatigue or stress are often unnoticed.</li>
-<li>Delayed responses can lead to workplace accidents.</li>
-</ul>
+## 🛠 Tech Stack
 
-<p>
-Organizations need a way to continuously monitor worker health without interrupting their workflow.
-</p>
+### Frontend
+- **Framework**: [React](https://reactjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Computer Vision**: [MediaPipe Face Detection](https://developers.google.com/mediapipe), [TensorFlow.js](https://www.tensorflow.org/js)
+- **Data Visualization**: [Recharts](https://recharts.org/)
 
-<hr>
+### Backend
+- **Engine**: [FastAPI](https://fastapi.tiangolo.com/) (Python)
+- **Database**: [MongoDB](https://www.mongodb.com/) (Motor Async Driver)
+- **Intelligence**: OpenAI GPT-4 API (via Astra-Care integration)
+- **Security**: JWT Authentication & Bcrypt Hashing
 
-<h2>Solution</h2>
+---
 
-<p>
-Vitalis uses AI-based computer vision techniques to analyze facial signals and estimate vital health indicators in real time.
-</p>
+## 🏗 Project Structure
 
-<p>
-The system processes video input and extracts biometric signals such as:
-</p>
+```text
+VITALIS/
+├── backend/            # FastAPI Server & AI Logic
+│   ├── server.py       # Core API & Multi-agent Logic
+│   └── requirements.txt# Backend Dependencies
+├── frontend/           # React Web Application
+│   ├── src/            # UI Components & rPPG Logic
+│   └── package.json    # Frontend Dependencies
+└── README.md           # Project Documentation
+```
 
-<ul>
-<li>Heart Rate</li>
-<li>Heart Rate Variability (HRV)</li>
-<li>Stress Level</li>
-<li>Fatigue Index</li>
-<li>Mood Indicators</li>
-</ul>
+---
 
-<p>
-These metrics are combined into a <strong>Wellness Score</strong> that provides a simple overview of a worker’s health condition.
-</p>
+## 🚦 Quick Start
 
-<p>
-If abnormal patterns are detected, the system generates alerts to allow early intervention.
-</p>
+### Backend Setup
+1. Navigate to the backend directory:
+   ```bash
+   cd backend
+   ```
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Configure environment variables in `.env`:
+   ```env
+   MONGO_URL=mongodb://localhost:27017/astracare
+   JWT_SECRET=your-secret-key
+   EMERGENT_LLM_KEY=your-api-key
+   ```
+4. Start the server:
+   ```bash
+   uvicorn server:app --reload
+   ```
 
-<hr>
+### Frontend Setup
+1. Navigate to the frontend directory:
+   ```bash
+   cd frontend
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm start
+   ```
 
-<h2>Key Features</h2>
+---
 
-<ul>
-<li>Real-time biometric monitoring using camera input</li>
-<li>AI-powered heart rate estimation</li>
-<li>Stress and fatigue detection</li>
-<li>Wellness score calculation</li>
-<li>Health trend visualization</li>
-<li>Multi-level alert system</li>
-<li>Minimal and intuitive monitoring dashboard</li>
-</ul>
+## 📝 License
 
-<hr>
+This project is licensed under the [LICENSE.txt](LICENSE.txt).
 
-<h2>Platform Modules</h2>
+---
 
-<h3>Dashboard</h3>
-<p>
-Provides an overview of the worker’s health condition including wellness score, vital signals, and recent biometric scans.
-</p>
-
-<h3>Live Scan</h3>
-<p>
-Captures facial data through the camera and performs real-time biometric signal analysis.
-</p>
-
-<h3>Health Trends</h3>
-<p>
-Displays historical data and trends for heart rate, stress levels, and fatigue indicators.
-</p>
-
-<h3>Alerts System</h3>
-<p>
-Detects abnormal patterns and generates alerts categorized by severity levels.
-</p>
-
-<hr>
-
-<h2>Alert Levels</h2>
-
-<ul>
-<li><strong>Level 1 – Preventive</strong> : Suggest relaxation or breathing exercises.</li>
-<li><strong>Level 2 – Fatigue Warning</strong> : Recommend rest or workload reduction.</li>
-<li><strong>Level 3 – Critical Alert</strong> : Notify supervisors for immediate intervention.</li>
-</ul>
-
-<hr>
-
-<h2>Use Cases</h2>
-
-<p>
-Vitalis can be applied in various industries where worker health monitoring is critical.
-</p>
-
-<ul>
-<li>Industrial workplaces</li>
-<li>Construction sites</li>
-<li>Mining operations</li>
-<li>Emergency response teams</li>
-<li>Transportation and logistics</li>
-<li>Healthcare staff monitoring</li>
-<li>Remote industrial operations</li>
-</ul>
-
-<hr>
-
-<h2>System Architecture</h2>
-
-<pre>
-Camera Input
-      |
-Biometric Signal Processing
-      |
-AI Health Analysis
-      |
-Wellness Score Calculation
-      |
-Alert Detection Engine
-      |
-Monitoring Dashboard
-</pre>
-
-<hr>
-
-<h2>Technology Stack</h2>
-
-<h3>Frontend</h3>
-<ul>
-<li>React.js</li>
-<li>Tailwind CSS</li>
-<li>Modern Dashboard UI</li>
-</ul>
-
-<h3>Backend</h3>
-<ul>
-<li>Python / Node.js</li>
-<li>API-based architecture</li>
-</ul>
-
-<h3>AI & Computer Vision</h3>
-<ul>
-<li>Facial signal analysis</li>
-<li>Remote photoplethysmography (rPPG)</li>
-<li>Machine learning based wellness scoring</li>
-</ul>
-
-<hr>
-
-<h2>Future Improvements</h2>
-
-<ul>
-<li>Multi-worker monitoring dashboard</li>
-<li>Predictive fatigue modeling</li>
-<li>Integration with wearable devices</li>
-<li>Automated emergency notifications</li>
-<li>AI-based health insights</li>
-</ul>
-
-<hr>
-
-<h2>Project Goal</h2>
-
-<p>
-Vitalis demonstrates how AI and computer vision can be used to improve workplace safety through proactive health monitoring.
-</p>
-
-<p>
-By detecting early warning signs of stress and fatigue, the platform aims to reduce accidents and improve worker well-being in high-risk environments.
-</p>
-
-<hr>
-
-<h2>License</h2>
-
-<p>MIT License</p>
-
-<hr>
-
-<p align="center">
-Built to explore the future of AI-powered health monitoring.
-</p>
+*Vitalis: Vision for a Healthier Frontier.*
