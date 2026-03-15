@@ -36,6 +36,7 @@ Once the website opens, log in using the credentials provided below.
 <strong>Email:</strong> <code>hi@gmail.com</code><br>
 <strong>Password:</strong> <code>abcd1234</code>
 </p>
+<p>Or you can also Register and Create a New Account!</p>
 
 <p>
 After entering the credentials, click <strong>Login</strong> to access the Vitalis dashboard.
